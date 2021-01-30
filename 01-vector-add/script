@@ -1,0 +1,4 @@
+// compile
+nvcc -o sm-optimized-vector-add 01-vector-add/01-vector-add.cu -run
+// profile
+nsys profile --stats=true ./sm-optimized-vector-add
